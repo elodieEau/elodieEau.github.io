@@ -27,6 +27,14 @@
   font-weight:700;
 }
 
+@font-face {
+  font-family: "PoppinsItalic";
+  src: local("PoppinsItalic"),
+  url("./fonts/Poppins/Poppins-Italic-400.ttf") format("truetype");
+  font-weight:400;
+}
+
+
 body {
   margin: 0;
   font-family: PoppinsRegular;

@@ -1,7 +1,6 @@
 .titleDouble{
     font-family: PoppinsBold;
     font-size: 34px;
-    text-align: left;
     line-height: 34px;
     overflow: visible;
     margin-left: 15vh;
@@ -13,7 +12,33 @@
     -webkit-text-fill-color: transparent;
 }
 
-.doubleBot{
-    margin-left: 20px;
-    color: #A58DA1;
+
+.QuoteDiv{
+    display: flex;
+    margin: 0 12vw 0 22vw;
+    margin-top: 70px;
+}
+
+.quoteIconL{
+    width: 50px;
+    display: flex;
+}
+
+.quoteIconR{
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.iconQuote{
+    width: 50px;
+    height: 50px;
+}
+
+.quoteText{
+    width: 50px;
+    flex: 1;
+    margin: 30px 15px;
+    font-size: 14px;
+    font-family:  PoppinsItalic;
 }
