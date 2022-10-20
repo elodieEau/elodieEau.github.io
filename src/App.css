@@ -14,9 +14,14 @@
     overflow: auto;
 }
 
-.app {
+.App {
     margin: 0;
     padding: 0;
-    background-color: var(--gray1);
+    background: linear-gradient(180deg,
+    #CDDAFD 0%,
+    #BEE1E6 50%,
+    #FAD2E1 100%
+    );
     width: 100vw;
+    min-height: 300vh;
 }
