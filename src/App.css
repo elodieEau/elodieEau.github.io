@@ -22,6 +22,10 @@
     #BEE1E6 50%,
     #FAD2E1 100%
     );
+    background: url("./images/BG.png");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center -135px;
     width: 100vw;
-    min-height: 300vh;
+    min-height: 500vh;
 }
