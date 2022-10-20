@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/elodieEau.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/elodieEau.github.io/static/js/main.143b5179.js",
+    "static/js/787.bbe01249.chunk.js": "/elodieEau.github.io/static/js/787.bbe01249.chunk.js",
+    "static/media/logo.svg": "/elodieEau.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/elodieEau.github.io/index.html",
+    "main.073c9b0a.css.map": "/elodieEau.github.io/static/css/main.073c9b0a.css.map",
+    "main.143b5179.js.map": "/elodieEau.github.io/static/js/main.143b5179.js.map",
+    "787.bbe01249.chunk.js.map": "/elodieEau.github.io/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.143b5179.js"
+  ]
+}
