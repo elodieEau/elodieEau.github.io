@@ -173,4 +173,7 @@
     .leftBox{
         margin: 0 20px 20px 20px;
     }
+    .caroussel{
+        margin-bottom: -20px;
+    }
  }
