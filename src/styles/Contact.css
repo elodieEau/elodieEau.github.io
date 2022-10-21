@@ -1,0 +1,110 @@
+.contactPage{
+    margin-top: 10vh;
+    display: flex;
+}
+
+.rightContact{
+    flex: 1;
+}
+
+form{
+    margin: 5vh 0;
+    padding: 5vh 3vw;
+}
+
+.doubleInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doubleInput input{
+    width: 47%;
+}
+
+
+input, textarea{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    background: none;
+    border: solid 1px  rgba(114, 90, 110, 0.7);
+    font-family: PoppinsRegular;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 160px;
+    resize: none;
+    padding-top: 8px;
+}
+
+.btnContainer{
+    text-align: center;
+}
+
+.btn{
+    font-family: PoppinsSemiBold;
+    font-size: 15px;
+    color: #fff;
+    background: rgba(114, 90, 110, 1);
+    width: auto;
+    height: auto;
+    margin: 10px 0px;
+    padding: 12px 60px;
+    border: solid 1px  rgba(114, 90, 110, 0.7);
+    border-radius: 50px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.btn:hover{   
+    color: #725A6E;
+    background: rgba(114, 90, 110, 0);
+}
+
+
+.leftContact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10vh;
+}
+
+.infoBox{
+    display: flex;
+    margin-bottom: 8vh;
+}
+
+.infoLL{
+    width: 10vw;
+}
+
+.infoLeft{
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infoRight{
+    flex: 1;
+}
+
+.contactIcon{
+    height: 30px;
+}
+
+.infoTitle{
+    color: #725A6E;
+    font-family: PoppinsSemiBold;
+    font-size: 20px;
+}
+
+.infoContent{
+    color: #725A6E;
+    font-family: PoppinsRegular;
+    font-size: 18px;
+}

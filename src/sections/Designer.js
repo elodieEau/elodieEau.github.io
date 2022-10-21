@@ -13,7 +13,7 @@ import logo1 from "../images/logo1.png";
 import logo2 from "../images/logo2.png";
 
 const Designer = React.forwardRef((props, ref) => (
-    <div ref={ref} className="designerPage" id="mecanical" >
+    <div ref={ref} className="designerPage" id="designer" >
         <Fade direction="up" delay={50} duration={700} triggerOnce={true}>
             <Title top="as a UI / UX" bot="Designer" color="#725A6E" left={20} />
         </Fade>
