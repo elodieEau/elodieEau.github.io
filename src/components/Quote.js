@@ -4,7 +4,7 @@ import quoteRight from "../images/quoteRight.png";
 
 const Quote = React.forwardRef((props, ref) => {
     const text = props.text || "";
-    const mg = props.mg || " 70px 12vw 0 22vw";
+    const mg = props.mg || "70px 2vw 0 22vw";
     return (
         <div ref={ref} className="QuoteDiv" style={{ margin: mg }}>
             <div className="quoteIconL">

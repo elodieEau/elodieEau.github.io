@@ -20,25 +20,28 @@ const Home = React.forwardRef((props, ref) => (
                 </div>
                 <div>
                     <Fade direction="up" delay={200} duration={700} triggerOnce={true}>
-                        <div className="titleSecond"><span className="titleFirst">I am&nbsp;</span> a&nbsp;<Typewriter
-                            options={{
-                                autoStart: true,
-                                loop: true,
-                                cursorClassName: "cursor",
-                                delay: 100,
-                            }}
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString('<span class="webApp">future engineer</span>')
-                                    .pauseFor(1500)
-                                    .deleteAll()
-                                    .typeString('<span class="webApp">Designer</span>')
-                                    .pauseFor(1500)
-                                    .deleteAll()
-                                    .start();
-                            }}
-                        />
+                        <div className="titleSecond">
+                            <span className="titleFirst">I am&nbsp;</span>
+                            a&nbsp;<Typewriter
+                                options={{
+                                    autoStart: true,
+                                    loop: true,
+                                    cursorClassName: "cursor",
+                                    delay: 100,
+                                }}
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString('<span class="webApp">future engineer</span>')
+                                        .pauseFor(1500)
+                                        .deleteAll()
+                                        .typeString('<span class="webApp">Designer</span>')
+                                        .pauseFor(1500)
+                                        .deleteAll()
+                                        .start();
+                                }}
+                            />
                         </div>
+                        <div className="typewritterOff">I am a&nbsp;<span class="webApp">future engineer</span></div>
                     </Fade>
                 </div>
             </div>

@@ -76,7 +76,6 @@
 }
 
 
-
 .caroussel{
     display: flex;
     height: 450px;
@@ -108,7 +107,7 @@
 }
 
 .leftBox{
-    flex: 1;
+    flex: 5;
     display: flex;
     flex-direction: column;
     margin: 0 60px;
@@ -123,12 +122,58 @@
 }
 
 .rightBox{
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .rightImage{
-    height: 400px;
+    max-height: 350px;
 }
+
+@media screen and (max-width: 991px) {
+    .skillBox{
+        width: 230px;
+    }
+    .caroussel{
+        margin-top: 4vh;
+        height: auto;
+    }
+    .bigArrowBox{
+        display: none;
+    }
+    .midBox{
+        flex-direction: column;
+    }
+    .QuoteDiv{
+        margin: 70px 5vw 0 12vw !important;
+    }
+    .rightImage{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .skillBox{
+        width: 450px;
+        margin-bottom: 60px;
+    }
+    .QuoteDiv{
+        margin: 10px !important;
+    }
+
+}
+    
+ @media screen and (max-width: 580px) {
+    .titleDouble{
+        font-size: 28px;
+    }
+    .skillBox{
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .leftBox{
+        margin: 20px;
+    }
+ }

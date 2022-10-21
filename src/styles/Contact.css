@@ -108,3 +108,28 @@ textarea{
     font-family: PoppinsRegular;
     font-size: 18px;
 }
+
+@media screen and (max-width: 991px) {
+    .contactPage{
+        margin-top: 0vh;
+        flex-direction: column;
+    }
+    .leftContact{
+        margin-top: 50px;
+    }
+    .infoLL{
+        width: 20vw;
+    }
+    .infoBox{
+        margin-bottom: 3vh;
+    }
+}
+ 
+ @media screen and (max-width: 580px) {
+    .doubleInput input{
+        width: 100%;
+    }
+    .doubleInput{
+        flex-direction: column;
+    }
+ }

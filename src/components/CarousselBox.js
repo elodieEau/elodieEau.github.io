@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import leftArrow from "../images/leftArrow.png";
 import rightArrow from "../images/rightArrow.png";
 import Quote from "./Quote";
 import Title from "./Title";
 import { Fade } from "react-awesome-reveal";
 
-const CarousselBox = React.forwardRef((props, ref) => {
+function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+}
+
+export default function CarousselBox(props) {
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, []);
     const top = props.top || "";
     const bot = props.bot || "";
     const text = props.text || "";
     const image = props.image || null;
-    const invert = props.invert || false;
+    const invert = (props.invert && windowSize.innerWidth > 991) || false;
+
     return (
-        <div ref={ref} className="caroussel">
+        <div className="caroussel">
             <div className="bigArrowBox">
                 <div className="smallArrow">
                     <Fade direction="left" delay={50} duration={700} triggerOnce={true}>
@@ -76,6 +95,4 @@ const CarousselBox = React.forwardRef((props, ref) => {
         </div>
 
     );
-});
-
-export default CarousselBox;
+}
