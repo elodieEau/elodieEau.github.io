@@ -38,7 +38,7 @@
 .hello{
     font-family: PoppinsSemiBold;
     font-size: 24px;
-    margin-bottom: 6vh;
+    margin-bottom: 3vh;
     display: block;
 }
 
@@ -171,5 +171,8 @@
     }
     .homePage{
         display: block;
+    }
+    .hello{
+        margin-bottom: 3vh;
     }
  }
