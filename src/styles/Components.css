@@ -11,7 +11,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .QuoteDiv{
     display: flex;
 }
@@ -99,8 +98,6 @@
     width: 75px;
 }
 
-
-
 .midBox{
     flex: 1;
     display: flex;
@@ -174,6 +171,6 @@
         margin-bottom: 50px;
     }
     .leftBox{
-        margin: 20px;
+        margin: 0 20px 20px 20px;
     }
  }
