@@ -3,7 +3,6 @@
     font-size: 34px;
     line-height: 34px;
     overflow: visible;
-    margin-left: 15vh;
 }
 
 .doubleTop{
@@ -15,9 +14,6 @@
 
 .QuoteDiv{
     display: flex;
-    margin: 0 12vw 0 22vw;
-    margin-top: 70px;
-    background-color: green;
 }
 
 .quoteIconL{
@@ -37,7 +33,6 @@
 }
 
 .quoteText{
-    width: 50px;
     flex: 1;
     margin: 30px 15px;
     font-size: 14px;
@@ -85,7 +80,7 @@
 .caroussel{
     display: flex;
     height: 450px;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 .bigArrowBox{
