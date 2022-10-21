@@ -20,7 +20,7 @@ const Home = React.forwardRef((props, ref) => (
                 </div>
                 <div>
                     <Fade direction="up" delay={200} duration={700} triggerOnce={true}>
-                        <div className="titleSecond"><span className="titleFirst">I am&nbsp;</span> a future&nbsp;<Typewriter
+                        <div className="titleSecond"><span className="titleFirst">I am&nbsp;</span> a&nbsp;<Typewriter
                             options={{
                                 autoStart: true,
                                 loop: true,
@@ -29,7 +29,7 @@ const Home = React.forwardRef((props, ref) => (
                             }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString('<span class="webApp">Engineer</span>')
+                                    .typeString('<span class="webApp">future engineer</span>')
                                     .pauseFor(1500)
                                     .deleteAll()
                                     .typeString('<span class="webApp">Designer</span>')
