@@ -3,11 +3,15 @@ import Quote from "../components/Quote";
 import Title from "../components/Title";
 import { Fade } from "react-awesome-reveal";
 import SkillBox from "../components/SkillBox";
+import CarousselBox from "../components/CarousselBox";
 
 import '../styles/Mecanical.css';
 import icon1 from "../images/icons/icon1.png";
 import icon2 from "../images/icons/icon2.png";
 import icon3 from "../images/icons/icon3.png";
+import helico from "../images/helico.png";
+
+
 
 const Mecanical = React.forwardRef((props, ref) => (
     <div ref={ref} className="mecanicalPage" id="mecanical" >
@@ -35,6 +39,12 @@ const Mecanical = React.forwardRef((props, ref) => (
             in multiple fields using computer-aided design." icon={icon3} />
             </Fade>
         </div>
+        <CarousselBox image={helico} text="As a student in my 4th year of mechanical engineering,
+         my training has enabled me to acquire solid technical knowledge but also a sense of
+          organisation and teamwork. The aim of the mechanical engineering specialisation at Polytech,
+           which covers a wide range of expertise, is to train engineers capable of managing the technical,
+            organisational and financial aspects of a project, from the drawing up of specifications to production."
+            top="Internship" bot="Tahiti Nui Helicopters" />
     </div >
 ));
 

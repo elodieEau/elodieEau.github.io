@@ -9,6 +9,8 @@ import icon1 from "../images/icons/icon1.png";
 import icon2 from "../images/icons/icon2.png";
 import icon3 from "../images/icons/icon3.png";
 
+
+
 const Designer = React.forwardRef((props, ref) => (
     <div ref={ref} className="designerPage" id="mecanical" >
         <Fade direction="up" delay={50} duration={700} triggerOnce={true}>

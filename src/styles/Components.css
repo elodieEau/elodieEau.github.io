@@ -17,6 +17,7 @@
     display: flex;
     margin: 0 12vw 0 22vw;
     margin-top: 70px;
+    background-color: green;
 }
 
 .quoteIconL{
@@ -77,4 +78,62 @@
     font-family: PoppinsRegular;
     font-weight: 300;
     letter-spacing: .3px;
+}
+
+
+
+.caroussel{
+    display: flex;
+    height: 450px;
+    margin-top: 20vh;
+}
+
+.bigArrowBox{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow{
+    width: 70px;
+    transition-duration: .3s;
+}
+
+.bigArrowBox:hover .arrow{
+    width: 75px;
+}
+
+
+
+.midBox{
+    flex: 1;
+    display: flex;
+}
+
+.leftBox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+}
+
+.topBox{
+    margin-top: 40px;
+}
+
+.botBox{
+    margin-top: 40px;
+}
+
+.rightBox{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightImage{
+    height: 400px;
 }
