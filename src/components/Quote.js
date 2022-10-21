@@ -3,7 +3,7 @@ import quoteLeft from "../images/quoteLeft.png";
 import quoteRight from "../images/quoteRight.png";
 
 const Quote = React.forwardRef((props, ref) => {
-    const text = props.text || 0;
+    const text = props.text || "";
     return (
         <div ref={ref} className="QuoteDiv" >
             <div className="quoteIconL">

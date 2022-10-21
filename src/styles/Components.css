@@ -42,3 +42,40 @@
     font-size: 14px;
     font-family:  PoppinsItalic;
 }
+
+.skillBox{
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding: 50px 25px 40px 25px;
+}
+
+.skillIcon{
+    background-color: #FFF1E6;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: -80px;
+}
+
+.skillImg{
+    width: 35px;
+}
+
+.skillTitle{
+    font-size: 18px;
+    font-family: PoppinsSemiBold;
+    margin-bottom: 20px;
+}
+
+.skillText{
+    font-size: 14px;
+    font-family: PoppinsRegular;
+    font-weight: 300;
+    letter-spacing: .3px;
+}

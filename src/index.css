@@ -34,6 +34,13 @@
   font-weight:400;
 }
 
+@font-face {
+  font-family: "PoppinsThin";
+  src: local("PoppinsThin"),
+  url("./fonts/Poppins/Poppins-Thin-250.ttf") format("truetype");
+  font-weight:250;
+}
+
 
 body {
   margin: 0;
