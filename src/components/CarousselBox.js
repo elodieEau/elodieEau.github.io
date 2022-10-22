@@ -116,15 +116,15 @@ export default function CarousselBox(props) {
             </div >
             <div className="carousselMobile">
                 <div className="imageM" style={{ display: toggle ? "block" : "none" }}>
-                    <Fade direction="up" delay={50} duration={700} triggerOnce={true}>
+                    <Fade delay={50} duration={700} triggerOnce={true}>
                         <img src={image} alt="imag right" className="rightImageM" />
                     </Fade>
                 </div>
                 <div className="contentM" style={{ display: toggle ? "block" : "none" }}>
-                    <Fade direction="up" delay={150} duration={700} triggerOnce={true}>
+                    <Fade delay={150} duration={700} triggerOnce={true}>
                         <Title top={top} bot={bot} color="#474747" mgLeft="50px" align="left" />
                     </Fade>
-                    <Fade direction="up" delay={250} duration={700} triggerOnce={true}>
+                    <Fade delay={250} duration={700} triggerOnce={true}>
                         <Quote text={text} mg="0" />
                     </Fade>
                 </div>
