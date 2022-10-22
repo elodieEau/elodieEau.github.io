@@ -7,6 +7,7 @@ import Designer from './sections/Designer';
 import Contact from './sections/Contact';
 
 function App() {
+
   return (
     <div className="App">
       <Home />

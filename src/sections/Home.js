@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { Fade } from "react-awesome-reveal";
 
 import '../styles/Home.css';
+import { Parallax } from "react-scroll-parallax";
 
 
 const Home = React.forwardRef((props, ref) => (
@@ -66,7 +67,9 @@ const Home = React.forwardRef((props, ref) => (
                     </Fade>
                 </div>
                 <Fade direction="up" delay={500} duration={700} triggerOnce={true}>
-                    <img src={eloFace} className="eloFace" alt="face" />
+                    <Parallax speed={5}>
+                        <img src={eloFace} className="eloFace" alt="face" />
+                    </Parallax>
                 </Fade>
             </div>
         </div>

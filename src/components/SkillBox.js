@@ -6,7 +6,7 @@ const SkillBox = React.forwardRef((props, ref) => {
     const text = props.text || "";
     const blue = props.blue || false;
     return (
-        <div ref={ref} className="skillBox">
+        <div className="skillBox">
             <div className="skillIcon" style={{ backgroundColor: blue ? "#9DB6FB" : "#FFF1E6" }}>
                 <img src={icon} alt="icon" className="skillImg" />
             </div>

@@ -158,7 +158,7 @@ textarea{
     }
     .btn{
         font-size: 18px;
-        padding: 20px 80px;
+        padding: 20px 80px !important;
     }
     form{
         padding: 5vh 30px;

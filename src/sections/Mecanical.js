@@ -13,6 +13,7 @@ import icon3 from "../images/icons/icon3.png";
 import projetHelico from "../images/projets/projetHelico.png";
 import projetBim from "../images/projets/projetBim.png";
 import projetEcam from "../images/projets/projetEcam.png";
+import { Parallax } from "react-scroll-parallax";
 
 const Mecanical = React.forwardRef((props, ref) => (
     <div ref={ref} className="mecanicalPage" id="mecanical" >
@@ -28,16 +29,23 @@ const Mecanical = React.forwardRef((props, ref) => (
         </Fade>
         <div className="skillRow">
             <Fade direction="up" delay={150} duration={700} triggerOnce={true}>
-                <SkillBox title="Research & management" text="Work as a team on a variety of problems and consider
+                <Parallax speed={8}>
+                    <SkillBox title="Research & management" text="Work as a team on a variety of problems and consider
              a solution. Market research, specifications..." icon={icon1} />
+                </Parallax>
             </Fade>
+
             <Fade direction="up" delay={250} duration={700} triggerOnce={true}>
-                <SkillBox title="Numerical calculations" text="Various types of calculations such as kinematics,
+                <Parallax speed={5}>
+                    <SkillBox title="Numerical calculations" text="Various types of calculations such as kinematics,
              dynamics, statistics, transient and simulation." icon={icon2} />
+                </Parallax>
             </Fade>
             <Fade direction="up" delay={350} duration={700} triggerOnce={true}>
-                <SkillBox title="Computer-aided design" text="design and develop new, innovative products 
+                <Parallax speed={2}>
+                    <SkillBox title="Computer-aided design" text="design and develop new, innovative products 
             in multiple fields using computer-aided design." icon={icon3} />
+                </Parallax>
             </Fade>
         </div>
         <CarousselBox
