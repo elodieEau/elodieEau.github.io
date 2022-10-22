@@ -120,7 +120,7 @@ export default function CarousselBox(props) {
                         <img src={image} alt="imag right" className="rightImageM" />
                     </Fade>
                 </div>
-                <div className="contentM" style={{ display: toggle ? "flex" : "none" }}>
+                <div className="contentM" style={{ display: toggle ? "block" : "none" }}>
                     <Fade direction="up" delay={150} duration={700} triggerOnce={true}>
                         <Title top={top} bot={bot} color="#474747" mgLeft="50px" align="left" />
                     </Fade>
