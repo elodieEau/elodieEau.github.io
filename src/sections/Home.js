@@ -10,7 +10,6 @@ import '../styles/Home.css';
 
 const Home = React.forwardRef((props, ref) => (
     <div ref={ref} className="homePage" id="home" >
-        <iframe src='https://my.spline.design/iphone14procopy-d4ea93b97a54f2039fa19ff01e579cc6/' frameborder='0' width='100%' height='100%'></iframe>
         <img src={circlesTop} className="circlesTop" alt="circles" />
         <div className="homeContainerTop">
             <div className="hiText">
