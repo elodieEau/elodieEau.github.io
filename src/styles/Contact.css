@@ -76,7 +76,7 @@ textarea{
 
 .infoBox{
     display: flex;
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
 }
 
 .infoLL{
@@ -108,6 +108,18 @@ textarea{
     color: #725A6E;
     font-family: PoppinsRegular;
     font-size: 18px;
+}
+
+.link{
+    text-decoration: none;
+    color: #725A6E;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: #9DB6FB;
+
 }
 
 @media screen and (max-width: 991px) {

@@ -1,7 +1,7 @@
 .titleDouble{
     font-family: PoppinsBold;
     font-size: 34px;
-    line-height: 34px;
+    line-height: 50px;
     overflow: visible;
 }
 
@@ -44,6 +44,13 @@
     border-radius: 12px;
     padding-top: 50px;
     padding: 50px 25px 40px 25px;
+    transition-duration: .3s;
+    cursor:default;
+}
+
+.skillBox:hover{
+    transform: scale(1.03);
+    box-shadow: -4px 4px 5px rgba(0,0,0,0.25); 
 }
 
 .skillIcon{
@@ -55,6 +62,7 @@
     border-radius: 100px;
     position: absolute;
     margin-top: -80px;
+    transition-duration: .5s;
 }
 
 .skillImg{
@@ -170,7 +178,7 @@
 }
 
 .contentM{
-    height: 320px;
+    height: 400px;
     transition-duration: .7s;
 }
 
@@ -210,6 +218,9 @@
     .arrowM{
         width: 55px;
     }
+    .contentM{
+        height: 320px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -219,6 +230,9 @@
     }
     .QuoteDiv{
         margin: 10px !important;
+    }
+    .contentM{
+        height: 300px;
     }
 
 }
@@ -236,5 +250,11 @@
     }
     .carousselMobile{
         margin-top: 30px;
+    }
+    .quoteText{
+        font-size: 12px;
+    }
+    .contentM{
+        height: 400px;
     }
  }

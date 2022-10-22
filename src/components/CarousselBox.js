@@ -126,7 +126,7 @@ export default function CarousselBox(props) {
                 </div>
                 <div className="contentM" style={{ opacity: toggle ? "1" : "0" }}>
                     <Fade delay={150} duration={700} triggerOnce={true}>
-                        <Title top={top} bot={bot} color="#474747" mgLeft="50px" align="left" />
+                        <Title top={top} bot={bot} color="#474747" mgLeft="25px" align="left" />
                     </Fade>
                     <Fade delay={250} duration={700} triggerOnce={true}>
                         <Quote text={text} mg="0" />
