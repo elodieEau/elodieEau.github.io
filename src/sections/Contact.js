@@ -36,8 +36,8 @@ const Contact = React.forwardRef((props, ref) => {
                     <InfoBox title="EMAIL" content="elodie.aqua@gmail.com" img={email} type="email" />
                 </Fade>
             </div>
-            <div className="rightContact" ref={form} onSubmit={sendEmail}>
-                <form>
+            <div className="rightContact">
+                <form ref={form} onSubmit={sendEmail}>
                     <Fade direction="up" delay={50} duration={700} triggerOnce={true}>
                         <div className="doubleInput">
                             <input type="text" placeholder="Name" name="name" />
