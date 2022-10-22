@@ -58,10 +58,11 @@ I also like to help brands find their identity by designing logos, flyers... " /
         />
 
         <CarousselBox
-            image={[appGym]}
-            text={["Application for a lifeguard who wants to give private lessons. You will be able to book for your children, see the calendar of upcoming lessons and pay directly through the application. All you have to do is come and enjoy!"]}
-            top={["Website / Applications"]}
-            bot={["Lucaquagym"]}
+            image={[appGym, appArpege]}
+            text={["Application for a lifeguard who wants to give private lessons. You will be able to book for your children, see the calendar of upcoming lessons and pay directly through the application. All you have to do is come and enjoy!",
+                "L'arpège is a restaurant app that displays all the information about the place. Make a reservation at L'arpège. Read the menu and see the itinerary. You will find all your favourite dishes from the restaurant's menu, so you can be ready when you arrive."]}
+            top={["Websites / Applications", "Website / Applications"]}
+            bot={["Lucaquagym", "L'Argpège"]}
             invert />
 
     </div >

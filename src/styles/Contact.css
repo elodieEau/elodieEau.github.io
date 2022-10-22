@@ -1,5 +1,5 @@
 .contactPage{
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
 }
 
@@ -32,6 +32,7 @@ input, textarea{
     font-family: PoppinsRegular;
     padding: 0 10px;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 textarea{
@@ -123,6 +124,10 @@ textarea{
     .infoBox{
         margin-bottom: 3vh;
     }
+    .btn{
+        padding: 22px 80px;
+        font-size: 18px;
+    }
 }
  
  @media screen and (max-width: 580px) {
@@ -131,5 +136,9 @@ textarea{
     }
     .doubleInput{
         flex-direction: column;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 20px 80px;
     }
  }

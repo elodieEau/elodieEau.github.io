@@ -77,8 +77,8 @@
 
 .caroussel{
     display: flex;
-    height: 450px;
-    margin-top: 25vh;
+    height: 400px;
+    margin-top: 12vh;
 }
 
 .bigArrowBox{
@@ -107,7 +107,7 @@
     flex: 5;
     display: flex;
     flex-direction: column;
-    margin: 0 60px;
+    margin: 0 20px;
 }
 
 .topBox{
@@ -119,14 +119,14 @@
 }
 
 .rightBox{
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .rightImage{
-    max-height: 350px;
+    max-width: 350px;
 }
 
 @media screen and (max-width: 991px) {
