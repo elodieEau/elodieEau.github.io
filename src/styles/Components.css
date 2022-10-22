@@ -101,6 +101,7 @@
 .midBox{
     flex: 1;
     display: flex;
+    transition-duration: .7s;
 }
 
 .leftBox{
@@ -136,9 +137,19 @@
 }
 
 .imageM{
-    text-align: right;
     padding-right: 6vw;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    transition-duration: .7s;
+}
+
+.imageC{
+    flex: 1;
+    height: 100%;
 }
 
 .rightImageM{
@@ -146,11 +157,21 @@
     max-width: 50vw;
 }
 
+.imageRightC{
+    flex: 1;
+    background-color: green;
+}
+
 .btnArrows{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.contentM{
+    height: 320px;
+    transition-duration: .7s;
 }
 
 .arrowM{

@@ -41,13 +41,15 @@ export default function CarousselBox(props) {
         <>
             <div className="caroussel">
                 <div className="bigArrowBox" onClick={() => {
-                    if (currentIndex > 0) {
-                        setCurrentIndex((currentIndex - 1) % length);
-                    } else {
-                        setCurrentIndex(length - 1);
-                    }
                     setToggle(false);
-                    setTimeout(() => { setToggle(true) }, 1);
+                    setTimeout(() => {
+                        if (currentIndex > 0) {
+                            setCurrentIndex((currentIndex - 1) % length);
+                        } else {
+                            setCurrentIndex(length - 1);
+                        }
+                        setToggle(true)
+                    }, 350);
                 }} >
                     <div className="smallArrow">
                         <Fade direction="left" delay={50} duration={700} triggerOnce={true}>
@@ -55,23 +57,23 @@ export default function CarousselBox(props) {
                         </Fade>
                     </div>
                 </div>
-                <div className="midBox" style={{ display: toggle ? "flex" : "none" }}>
+                <div className="midBox" style={{ opacity: toggle ? 1 : 0 }}>
                     {
                         invert ?
                             <>
                                 <div className="rightBox">
-                                    <Fade direction="up" delay={50} duration={700} triggerOnce={true}>
+                                    <Fade delay={50} duration={700} triggerOnce={true}>
                                         <img src={image} alt="imag right" className="rightImage" />
                                     </Fade>
                                 </div>
                                 <div className="leftBox">
                                     <div className="topBox">
-                                        <Fade direction="up" delay={150} duration={700} triggerOnce={true}>
+                                        <Fade delay={150} duration={700} triggerOnce={true}>
                                             <Title top={top} bot={bot} color="#474747" mgLeft="0" align="right" />
                                         </Fade>
                                     </div>
                                     <div className="botBox">
-                                        <Fade direction="up" delay={250} duration={700} triggerOnce={true}>
+                                        <Fade delay={250} duration={700} triggerOnce={true}>
                                             <Quote text={text} mg="0" />
                                         </Fade>
                                     </div>
@@ -81,19 +83,19 @@ export default function CarousselBox(props) {
                             <>
                                 <div className="leftBox">
                                     <div className="topBox">
-                                        <Fade direction="up" delay={50} duration={700} triggerOnce={true}>
+                                        <Fade delay={50} duration={700} triggerOnce={true}>
                                             <Title top={top} bot={bot} color="#474747" mgLeft="0" />
                                         </Fade>
                                     </div>
                                     <div className="botBox">
-                                        <Fade direction="up" delay={150} duration={700} triggerOnce={true}>
+                                        <Fade delay={150} duration={700} triggerOnce={true}>
                                             <Quote text={text} mg="0" />
                                         </Fade>
                                     </div>
                                 </div>
 
                                 <div className="rightBox">
-                                    <Fade direction="up" delay={250} duration={700} triggerOnce={true}>
+                                    <Fade delay={250} duration={700} triggerOnce={true}>
                                         <img src={image} alt="imag right" className="rightImage" />
                                     </Fade>
                                 </div>
@@ -102,10 +104,11 @@ export default function CarousselBox(props) {
                     }
                 </div>
                 <div className="bigArrowBox" onClick={() => {
-                    setCurrentIndex((currentIndex + 1) % length);
                     setToggle(false);
-                    setTimeout(() => { setToggle(true) }, 1);
-
+                    setTimeout(() => {
+                        setCurrentIndex((currentIndex + 1) % length);
+                        setToggle(true)
+                    }, 350);
                 }}>
                     <div className="smallArrow">
                         <Fade direction="right" delay={50} duration={700} triggerOnce={true}>
@@ -115,12 +118,13 @@ export default function CarousselBox(props) {
                 </div>
             </div >
             <div className="carousselMobile">
-                <div className="imageM" style={{ display: toggle ? "block" : "none" }}>
+                <div className="imageM" style={{ opacity: toggle ? "1" : "0" }}>
+                    <div className="imageC"></div>
                     <Fade delay={50} duration={700} triggerOnce={true}>
                         <img src={image} alt="imag right" className="rightImageM" />
                     </Fade>
                 </div>
-                <div className="contentM" style={{ display: toggle ? "block" : "none" }}>
+                <div className="contentM" style={{ opacity: toggle ? "1" : "0" }}>
                     <Fade delay={150} duration={700} triggerOnce={true}>
                         <Title top={top} bot={bot} color="#474747" mgLeft="50px" align="left" />
                     </Fade>
@@ -131,20 +135,24 @@ export default function CarousselBox(props) {
                 <div className="btnArrows">
                     <Fade direction="left" delay={350} duration={700} triggerOnce={true} >
                         <img src={leftArrow} alt="leftArrow" className="arrowM" onClick={() => {
-                            if (currentIndex > 0) {
-                                setCurrentIndex((currentIndex - 1) % length);
-                            } else {
-                                setCurrentIndex(length - 1);
-                            }
                             setToggle(false);
-                            setTimeout(() => { setToggle(true) }, 1);
+                            setTimeout(() => {
+                                if (currentIndex > 0) {
+                                    setCurrentIndex((currentIndex - 1) % length);
+                                } else {
+                                    setCurrentIndex(length - 1);
+                                }
+                                setToggle(true)
+                            }, 350);
                         }} />
                     </Fade>
-                    <Fade direction="left" delay={350} duration={700} triggerOnce={true}>
+                    <Fade direction="right" delay={350} duration={700} triggerOnce={true}>
                         <img src={rightArrow} alt="rightArrow" className="arrowM" onClick={() => {
-                            setCurrentIndex((currentIndex + 1) % length);
                             setToggle(false);
-                            setTimeout(() => { setToggle(true) }, 1);
+                            setTimeout(() => {
+                                setCurrentIndex((currentIndex + 1) % length);
+                                setToggle(true)
+                            }, 350);
                         }} />
                     </Fade>
                 </div>
