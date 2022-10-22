@@ -24,15 +24,23 @@ export default function CarousselBox(props) {
             window.removeEventListener('resize', handleWindowResize);
         };
     }, []);
-    const top = props.top || "";
-    const bot = props.bot || "";
-    const text = props.text || "";
-    const image = props.image || null;
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const length = props.top.length;
+    const top = props.top[currentIndex] || "";
+    const bot = props.bot[currentIndex] || "";
+    const text = props.text[currentIndex] || "";
+    const image = props.image[currentIndex] || null;
     const invert = (props.invert && windowSize.innerWidth > 991) || false;
 
     return (
         <div className="caroussel">
-            <div className="bigArrowBox">
+            <div className="bigArrowBox" onClick={() => {
+                if (currentIndex > 0) {
+                    setCurrentIndex((currentIndex - 1) % length);
+                } else {
+                    setCurrentIndex(length - 1);
+                }
+            }} >
                 <div className="smallArrow">
                     <Fade direction="left" delay={50} duration={700} triggerOnce={true}>
                         <img src={leftArrow} alt="leftArrow" className="arrow" />
@@ -85,14 +93,16 @@ export default function CarousselBox(props) {
 
                 }
             </div>
-            <div className="bigArrowBox">
+            <div className="bigArrowBox" onClick={() => {
+                setCurrentIndex((currentIndex + 1) % length)
+            }}>
                 <div className="smallArrow">
                     <Fade direction="right" delay={50} duration={700} triggerOnce={true}>
                         <img src={rightArrow} alt="rightArrow" className="arrow" />
                     </Fade>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 }
