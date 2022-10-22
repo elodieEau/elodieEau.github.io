@@ -41,7 +41,7 @@ const Home = React.forwardRef((props, ref) => (
                                 }}
                             />
                         </div>
-                        <div className="typewritterOff">I am a&nbsp;<span class="webApp">future engineer</span></div>
+                        <div className="typewritterOff">I am a&nbsp;<span className="webApp">future engineer</span></div>
                     </Fade>
                 </div>
             </div>
