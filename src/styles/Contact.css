@@ -128,6 +128,13 @@ textarea{
         padding: 22px 80px;
         font-size: 18px;
     }
+    .leftContact{
+        padding-top: 0;
+        margin-top: 20px;
+    }
+    form{
+        margin: 0;
+    }
 }
  
  @media screen and (max-width: 580px) {
@@ -140,5 +147,11 @@ textarea{
     .btn{
         font-size: 18px;
         padding: 20px 80px;
+    }
+    form{
+        padding: 5vh 30px;
+    }
+    input, textarea{
+        font-size: 16px;
     }
  }

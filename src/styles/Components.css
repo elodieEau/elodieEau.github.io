@@ -129,25 +129,69 @@
     max-width: 350px;
 }
 
+.carousselMobile{
+    display: none;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.imageM{
+    text-align: right;
+    padding-right: 6vw;
+    margin-bottom: -10px;
+}
+
+.rightImageM{
+    max-height: 320px;
+    max-width: 50vw;
+}
+
+.contentM{
+
+}
+
+.btnArrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.arrowM{
+    margin: 0 40px;
+    width: 40px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.arrowM:hover{
+    transform: scale(1.1);
+}
+
+.lineContainer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.line{
+    height: 4.5px;
+}
+
 @media screen and (max-width: 991px) {
     .skillBox{
         width: 230px;
     }
     .caroussel{
-        margin-top: 4vh;
-        height: auto;
-    }
-    .bigArrowBox{
         display: none;
-    }
-    .midBox{
-        flex-direction: column;
     }
     .QuoteDiv{
         margin: 70px 5vw 0 12vw !important;
     }
-    .rightImage{
-        margin-top: 20px;
+    .carousselMobile{
+        display: block;
+    }
+    .arrowM{
+        width: 55px;
     }
 }
 
@@ -170,10 +214,10 @@
         width: 350px;
         margin-bottom: 50px;
     }
-    .leftBox{
-        margin: 0 20px 20px 20px;
+    .arrowM{
+        width: 40px;
     }
-    .caroussel{
-        margin-bottom: -20px;
+    .carousselMobile{
+        margin-top: 30px;
     }
  }
