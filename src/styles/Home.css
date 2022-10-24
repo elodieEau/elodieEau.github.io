@@ -1,14 +1,14 @@
-.homePage{
+.homePage {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.circlesTop{
+.circlesTop {
     width: 150px;
     height: 100px;
     position: absolute;
@@ -16,86 +16,88 @@
     right: 0px;
 }
 
-.homeContainerTop{
+.homeContainerTop {
     width: 100%;
     padding-top: 18vh;
     margin-bottom: -22vh;
     flex: 1;
 }
 
-.homeContainerBottom{
+.homeContainerBottom {
     width: 100%;
     flex: 1;
     text-align: center;
 }
 
-.hiText{
+.hiText {
     text-align: center;
     height: auto;
     display: block;
 }
 
-.hello{
+.hello {
     font-family: PoppinsSemiBold;
     font-size: 24px;
     margin-bottom: 3vh;
     display: block;
 }
 
-.titleFirst{
+.titleFirst {
     font-size: 50px;
     font-family: PoppinsMedium;
 }
 
-.titleSecond{
+.titleSecond {
     font-size: 50px;
     font-family: PoppinsBold;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 .cursor {
     font-family: PoppinsRegular;
     animation: blink 1s infinite;
-  }
+}
 
-  @keyframes blink {
+@keyframes blink {
+
     from,
     to {
-      opacity: 1;
+        opacity: 1;
     }
-    50% {
-      opacity: 0;
-    }
-  }
 
-.profilBox{
-    display:flex;
+    50% {
+        opacity: 0;
+    }
+}
+
+.profilBox {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 6vw;
 }
 
-.circlesLeft{
+.circlesLeft {
     position: relative;
     height: 100%;
     max-height: 300px;
     padding: 20px 0;
 }
 
-.eloFace{
+.eloFace {
     height: auto;
     max-height: 300px;
     max-width: 300px;
     width: 100%;
 }
 
-.titleHome{
+.titleHome {
     max-width: 33%;
     margin: 0 6vw;
 }
 
-.homeName{
+.homeName {
     font-family: PoppinsSemiBold;
     font-size: 34px;
     text-align: left;
@@ -103,76 +105,113 @@
     overflow: visible;
 }
 
-.homeDesc{
+.homeDesc {
     font-family: PoppinsSemiBold;
     margin-top: 40px;
     text-align: left;
     font-size: 20px;
 }
 
-.nameP{
+.nameP {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
     -webkit-text-fill-color: transparent;
 }
 
-.typewritterOff{
+.typewritterOff {
     font-size: 30px;
     font-family: PoppinsMedium;
-    display:none;
+    display: none;
 }
 
-.webApp{
+.webApp {
     font-family: PoppinsSemiBold;
 }
 
-@media screen and (max-width: 991px) {
-
+.mainBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
 }
-    
- @media screen and (max-width: 580px) {
-    .typewritterOff{
+
+.contactBtn {
+    text-decoration: none;
+    font-family: PoppinsSemiBold;
+    font-size: 15px;
+    color: #fff;
+    background: rgba(114, 90, 110, 1);
+    width: auto;
+    height: auto;
+    margin: 10px 0px;
+    padding: 12px 60px;
+    border: solid 1px rgba(114, 90, 110, 0.7);
+    border-radius: 50px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.contactBtn:hover {
+    color: #725A6E;
+    background: rgba(114, 90, 110, 0);
+}
+
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 580px) {
+    .typewritterOff {
         display: block;
     }
-    .titleSecond{
+
+    .titleSecond {
         display: none;
     }
-    .circlesLeft{
+
+    .circlesLeft {
         display: none;
     }
-    .profilBox{
-        display:flex;
+
+    .profilBox {
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-right: 0;
     }
-    .homeContainerTop{
+
+    .homeContainerTop {
         width: 100%;
         padding-top: 5vh;
         margin-bottom: 3vh;
         flex: 1;
     }
-    .titleHome{
+
+    .titleHome {
         max-width: 100%;
     }
-    .homeName{
+
+    .homeName {
         text-align: center;
         font-size: 34px;
     }
-    .homeDesc{
+
+    .homeDesc {
         text-align: center;
         font-size: 18px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .circlesTop{
+
+    .circlesTop {
         display: none;
     }
-    .homePage{
+
+    .homePage {
         display: block;
     }
-    .hello{
+
+    .hello {
         margin-bottom: 3vh;
     }
- }
+}

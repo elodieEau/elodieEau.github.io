@@ -72,6 +72,9 @@ const Home = React.forwardRef((props, ref) => (
                     </Parallax>
                 </Fade>
             </div>
+            <div className="mainBtnContainer">
+                <a href="#contact" className="contactBtn">Contact me</a>
+            </div>
         </div>
 
     </div >
