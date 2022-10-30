@@ -22,8 +22,8 @@ const Home = React.forwardRef((props, ref) => (
                 <div>
                     <Fade direction="up" delay={200} duration={700} triggerOnce={true}>
                         <div className="titleSecond">
-                            <span className="titleFirst">I am&nbsp;</span>
-                            a&nbsp;<Typewriter
+                            <span className="titleFirst">I am a&nbsp;</span>
+                            <Typewriter
                                 options={{
                                     autoStart: true,
                                     loop: true,
@@ -73,7 +73,9 @@ const Home = React.forwardRef((props, ref) => (
                 </Fade>
             </div>
             <div className="mainBtnContainer">
-                <a href="#contact" className="contactBtn">Contact me</a>
+                <Fade direction="up" delay={550} duration={700} triggerOnce={true}>
+                    <a href="#contact" className="contactBtn">Contact me</a>
+                </Fade>
             </div>
         </div>
 

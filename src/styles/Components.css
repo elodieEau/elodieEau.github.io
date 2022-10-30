@@ -152,7 +152,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: row;
-    transition-duration: .7s;
+    transition-duration: 0.5s;
 }
 
 .imageC{
